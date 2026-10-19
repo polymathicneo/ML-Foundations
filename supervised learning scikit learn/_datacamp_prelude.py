@@ -9,9 +9,11 @@ import numpy as np
 sales_df = pd.read_csv("advertising_sales.csv")
 
 # Default X/y for the simple linear regression exercises.
+# Rows with missing values are dropped so the model can fit.
 # Override these in your snippet if the exercise defines its own.
-X = sales_df[["radio"]].values
-y = sales_df["sales"].values
+_valid = sales_df[["radio", "sales"]].notna().all(axis=1)
+X = sales_df.loc[_valid, ["radio"]].values
+y = sales_df.loc[_valid, "sales"].values
 
 # `predictions` is preloaded on the visualization and residual exercises.
 try:
