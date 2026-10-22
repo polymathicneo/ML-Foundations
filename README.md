@@ -14,6 +14,8 @@ This repository is organized by topic so each notebook/script is easy to find an
 - `pandas/`
   - `pandas_dataframes.ipynb`: DataFrame-focused practice.
   - `pandas_missing_data.ipynb`: Missing data handling techniques.
+  - `pandas_groupby_aggregation.ipynb`: GroupBy and aggregation techniques.
+  - `pandas_pivot_tables.ipynb`: Pivot table exercises.
 - `linear_regression/`
   - `linear_regression_prepare_features.py`: Builds feature/target arrays from advertising data.
   - `linear_regression_train_test_split.py`: Train/test split linear regression workflow and predictions.
@@ -25,7 +27,7 @@ This repository is organized by topic so each notebook/script is easy to find an
   - `evaluate_regression_metrics.py`: Computes regression performance metrics (R² and RMSE).
   - `advertising_sales.csv`: Dataset used in supervised learning scripts.
 - `pandas_merging_joining_concatenation.ipynb`
-  - Notebook covering pandas merge/join/concatenation patterns.
+  - Notebook covering pandas merge, join, and concatenation patterns.
 
 ## Codebase Analysis Summary
 
